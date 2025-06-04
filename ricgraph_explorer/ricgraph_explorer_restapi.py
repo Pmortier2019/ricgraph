@@ -49,8 +49,8 @@ from ricgraph import (create_http_response, HTTP_RESPONSE_OK,
                       read_all_nodes, get_all_neighbor_nodes,
                       get_personroot_node, get_all_personroot_nodes,
                       convert_nodes_to_list_of_dict)
-from ricgraph_explorer_constants import MAX_ITEMS, SEARCH_STRING_MIN_LENGTH
-from ricgraph_explorer_graphdb import (find_person_share_resouts_cypher,
+from ricgraph_explorer.ricgraph_explorer_constants import MAX_ITEMS, SEARCH_STRING_MIN_LENGTH
+from ricgraph_explorer.ricgraph_explorer_graphdb import (find_person_share_resouts_cypher,
                                        find_person_organization_collaborations_cypher,
                                        find_organization_additional_info_cypher,
                                        find_enrich_candidates_one_person)
@@ -782,3 +782,10 @@ def api_get_ricgraph_list(ricgraph_list_name: str = '') -> Tuple[dict, int]:
                                             message=str(len(result_list)) + ' items found',
                                             http_status=HTTP_RESPONSE_OK)
     return response, status
+import connexion
+
+app = connexion.App(__name__, specification_dir="./static/")
+app.add_api("openapi.yaml")
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)

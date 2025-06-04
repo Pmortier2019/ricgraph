@@ -63,10 +63,10 @@ from ricgraph import (nodes_cache_nodelink_create,
                       create_unique_string,
                       A_LARGE_NUMBER,
                       get_valuepart_from_ricgraph_value, get_additionalpart_from_ricgraph_value)
-from ricgraph_explorer_constants import (DETAIL_COLUMNS, RESEARCH_OUTPUT_COLUMNS,
+from ricgraph_explorer.ricgraph_explorer_constants import (DETAIL_COLUMNS, RESEARCH_OUTPUT_COLUMNS,
                                          MAX_ROWS_TO_EXPORT, ID_COLUMNS,
                                          button_style)
-from ricgraph_explorer_utils import (get_html_for_cardstart, get_html_for_cardend,
+from ricgraph_explorer.ricgraph_explorer_utils import (get_html_for_cardstart, get_html_for_cardend,
                                      get_message, url_for)
 
 

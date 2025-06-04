@@ -66,12 +66,12 @@ from ricgraph import (get_personroot_node,
                       get_all_neighbor_nodes, read_all_nodes,
                       ricgraph_database, ricgraph_databasename,
                       create_multidimensional_dict)
-from ricgraph_explorer_constants import (MAX_NR_NODES_TO_ENRICH, MAX_ITEMS,
+from ricgraph_explorer.ricgraph_explorer_constants import (MAX_NR_NODES_TO_ENRICH, MAX_ITEMS,
                                          RESEARCH_OUTPUT_COLUMNS, DETAIL_COLUMNS)
-from ricgraph_explorer_utils import (get_html_for_cardstart, get_html_for_cardend,
+from ricgraph_explorer.ricgraph_explorer_utils import (get_html_for_cardstart, get_html_for_cardend,
                                      get_message,
                                      get_you_searched_for_card)
-from ricgraph_explorer_table import  (get_regular_table, get_tabbed_table,
+from ricgraph_explorer.ricgraph_explorer_table import  (get_regular_table, get_tabbed_table,
                                       get_html_for_histogram,
                                       get_html_for_tablestart, get_html_for_tableend)
 

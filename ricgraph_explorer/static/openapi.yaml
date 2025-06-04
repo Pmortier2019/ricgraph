@@ -228,7 +228,7 @@ tags:
 paths:
   /person/search:
     get:
-      operationId: "ricgraph_explorer.api_search_person"
+      operationId: "ricgraph_explorer.ricgraph_explorer_restapi.api_search_person"
       tags:
         - Person
       summary: "Search for a person"
@@ -244,7 +244,7 @@ paths:
           description: "Invalid search"
   /person/all_information:
     get:
-      operationId: "ricgraph_explorer.api_person_all_information"
+      operationId: "ricgraph_explorer.ricgraph_explorer_restapi.api_person_all_information"
       tags:
         - Person
       summary: "Show all information related to this person"
@@ -260,7 +260,7 @@ paths:
           description: "Invalid search"
   /person/share_research_results:
     get:
-      operationId: "ricgraph_explorer.api_person_share_research_results"
+      operationId: "ricgraph_explorer.ricgraph_explorer_restapi.api_person_share_research_results"
       tags:
         - Person
       summary: "Find persons that share any share research result types with this person"
@@ -276,7 +276,7 @@ paths:
           description: "Invalid search"
   /person/collaborating_organizations:
     get:
-      operationId: "ricgraph_explorer.api_person_collaborating_organizations"
+      operationId: "ricgraph_explorer.ricgraph_explorer_restapi.api_person_collaborating_organizations"
       tags:
         - Person
       summary: "Find organizations that this person collaborates with"
@@ -296,7 +296,7 @@ paths:
           description: "Invalid search"
   /person/enrich:
     get:
-      operationId: "ricgraph_explorer.api_person_enrich"
+      operationId: "ricgraph_explorer.ricgraph_explorer_restapi.api_person_enrich"
       tags:
         - Person
       summary: "Find information harvested from other source systems,
@@ -329,7 +329,7 @@ paths:
           description: "Invalid search"
   /organization/search:
     get:
-      operationId: "ricgraph_explorer.api_search_organization"
+      operationId: "ricgraph_explorer.ricgraph_explorer_restapi.api_search_organization"
       tags:
         - Organization
       summary: "Search for a (sub-)organization"
@@ -345,7 +345,7 @@ paths:
           description: "Invalid search"
   /organization/all_information:
     get:
-      operationId: "ricgraph_explorer.api_organization_all_information"
+      operationId: "ricgraph_explorer.ricgraph_explorer_restapi.api_organization_all_information"
       tags:
         - Organization
       summary: "Show all information related to this organization"
@@ -361,7 +361,7 @@ paths:
           description: "Invalid search"
   /organization/information_persons_results:
     get:
-      operationId: "ricgraph_explorer.api_organization_information_persons_results"
+      operationId: "ricgraph_explorer.ricgraph_explorer_restapi.api_organization_information_persons_results"
       tags:
         - Organization
       summary: "Find any information from persons or their results in this organization"
@@ -379,7 +379,7 @@ paths:
           description: "Invalid search"
   /organization/enrich:
     get:
-      operationId: "ricgraph_explorer.api_organization_enrich"
+      operationId: "ricgraph_explorer.ricgraph_explorer_restapi.api_organization_enrich"
       tags:
         - Organization
       summary: "Find information harvested from other source systems,
@@ -413,7 +413,7 @@ paths:
           description: "Invalid search"
   /competence/search:
     get:
-      operationId: "ricgraph_explorer.api_search_competence"
+      operationId: "ricgraph_explorer.ricgraph_explorer_restapi.api_search_competence"
       tags:
         - Skill, expertise area or research area
       summary: "Search for a skill, expertise area or research area"
@@ -429,7 +429,7 @@ paths:
           description: "Invalid search"
   /competence/all_information:
     get:
-      operationId: "ricgraph_explorer.api_competence_all_information"
+      operationId: "ricgraph_explorer.ricgraph_explorer_restapi.api_competence_all_information"
       tags:
         - Skill, expertise area or research area
       summary: "Show all information related to this competence"
@@ -445,7 +445,7 @@ paths:
           description: "Invalid search"
   /broad_search:
     get:
-      operationId: "ricgraph_explorer.api_broad_search"
+      operationId: "ricgraph_explorer.ricgraph_explorer_restapi.api_broad_search"
       tags:
         - Advanced
       summary: "Search for anything (broad search)"
@@ -461,7 +461,7 @@ paths:
           description: "Invalid search"
   /advanced_search:
     get:
-      operationId: "ricgraph_explorer.api_advanced_search"
+      operationId: "ricgraph_explorer.ricgraph_explorer_restapi.api_advanced_search"
       tags:
         - Advanced
       summary: "Advanced search"
@@ -482,7 +482,7 @@ paths:
           description: "Invalid search"
   /get_all_personroot_nodes:
     get:
-      operationId: "ricgraph_explorer.api_get_all_personroot_nodes"
+      operationId: "ricgraph_explorer.ricgraph_explorer_restapi.api_get_all_personroot_nodes"
       tags:
         - Advanced
       summary: "Find all person-root nodes of this node"
@@ -498,7 +498,7 @@ paths:
           description: "Invalid search"
   /get_all_neighbor_nodes:
     get:
-      operationId: "ricgraph_explorer.api_get_all_neighbor_nodes"
+      operationId: "ricgraph_explorer.ricgraph_explorer_restapi.api_get_all_neighbor_nodes"
       tags:
         - Advanced
       summary: "Find all neighbor nodes of this node"
@@ -518,7 +518,7 @@ paths:
           description: "Invalid search"
   /get_ricgraph_list:
     get:
-      operationId: "ricgraph_explorer.api_get_ricgraph_list"
+      operationId: "ricgraph_explorer.ricgraph_explorer_restapi.api_get_ricgraph_list"
       tags:
         - Advanced
       summary: "Get the values of an internal global Ricgraph list"

@@ -44,7 +44,7 @@ from flask import request, url_for
 from markupsafe import escape
 from neo4j.graph import Node
 from ricgraph import create_unique_string
-from ricgraph_explorer_constants import button_style, button_width
+from ricgraph_explorer.ricgraph_explorer_constants import button_style, button_width
 
 
 def get_url_parameter_value(parameter: str,
