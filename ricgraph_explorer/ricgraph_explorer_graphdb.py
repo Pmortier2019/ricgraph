@@ -62,6 +62,7 @@ from typing import Tuple, Union
 from neo4j.graph import Node
 from flask import url_for
 import urllib.parse
+from neo4j import GraphDatabase
 from ricgraph import (get_personroot_node,
                       get_all_neighbor_nodes, read_all_nodes,
                       ricgraph_database, ricgraph_databasename,
@@ -1124,3 +1125,15 @@ def find_overlap_in_source_systems_records(name: str = '', category: str = '', v
                               discoverer_mode=discoverer_mode,
                               extra_url_parameters=extra_url_parameters)
     return html
+
+def find_publications_by_name_fragment(title_fragment: str):
+    query = """
+    MATCH (p:RicgraphNode)
+    WHERE p.category = 'publication' AND toLower(p.name) CONTAINS toLower($title_fragment)
+    RETURN p
+    """
+    driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "Ricgraph"))
+
+    with driver.session() as session:
+        result = session.run(query, title_fragment=title_fragment)
+        return [record["p"] for record in result]

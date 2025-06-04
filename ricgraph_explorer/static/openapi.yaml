@@ -531,3 +531,19 @@ paths:
           description: "Nothing found"
         "251":
           description: "Invalid search"
+  /publication/search:
+    get:
+      operationId: ricgraph_explorer.ricgraph_explorer_restapi.api_get_publication_by_title
+      summary: Search publication by title
+      parameters:
+        - name: title
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: Not Found
+

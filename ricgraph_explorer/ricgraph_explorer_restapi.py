@@ -784,6 +784,32 @@ def api_get_ricgraph_list(ricgraph_list_name: str = '') -> Tuple[dict, int]:
     return response, status
 import connexion
 
+
+def api_get_publication_by_title(title: str = '') -> Tuple[dict, int]:
+    from ricgraph_explorer.ricgraph_explorer_graphdb import find_publications_by_name_fragment
+    from ricgraph import create_http_response, HTTP_RESPONSE_OK, HTTP_RESPONSE_NOTHING_FOUND
+
+    if title == '':
+        return create_http_response(message='No title specified',
+                                    http_status=HTTP_RESPONSE_NOTHING_FOUND)
+
+    try:
+        publications = find_publications_by_name_fragment(title)
+        if not publications:
+            return create_http_response(message='No publications found',
+                                        http_status=HTTP_RESPONSE_NOTHING_FOUND)
+
+        # Zet het resultaat netjes om naar dicts
+        records = [dict(p) for p in publications]
+
+        return create_http_response(result_list=records,
+                                    message=f"{len(records)} items found",
+                                    http_status=HTTP_RESPONSE_OK)
+    except Exception as e:
+        return create_http_response(message=f"Internal error: {str(e)}",
+                                    http_status=500)
+
+
 app = connexion.App(__name__, specification_dir="./static/")
 app.add_api("openapi.yaml")
 
