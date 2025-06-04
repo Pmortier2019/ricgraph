@@ -808,6 +808,11 @@ def api_get_publication_by_title(title: str = '') -> Tuple[dict, int]:
     except Exception as e:
         return create_http_response(message=f"Internal error: {str(e)}",
                                     http_status=500)
+from ricgraph_explorer.ricgraph_explorer_graphdb import find_topics_by_publication_key
+
+def api_get_topics_by_publication_key(pub_key: str):
+    results = find_topics_by_publication_key(pub_key)
+    return [dict(record) for record in results]
 
 
 app = connexion.App(__name__, specification_dir="./static/")

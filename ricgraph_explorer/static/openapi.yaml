@@ -546,4 +546,23 @@ paths:
           description: OK
         '404':
           description: Not Found
+  /publication/{pub_key}/topics:
+    get:
+      operationId: ricgraph_explorer.ricgraph_explorer_restapi.api_get_topics_by_publication_key
+      summary: Get topics for a publication
+      parameters:
+        - name: pub_key
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: List of topics
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
 

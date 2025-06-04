@@ -1137,3 +1137,14 @@ def find_publications_by_name_fragment(title_fragment: str):
     with driver.session() as session:
         result = session.run(query, title_fragment=title_fragment)
         return [record["p"] for record in result]
+    
+def find_topics_by_publication_key(pub_key: str):
+    query = """
+    MATCH (p:RicgraphNode {category: 'publication', _key: $pub_key})-[:RELATED_TO]->(t:RicgraphNode {category: 'topic'})
+    RETURN t
+    """
+    driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "Ricgraph"))
+
+    with driver.session() as session:
+        result = session.run(query, pub_key=pub_key)
+        return [record["t"] for record in result]
