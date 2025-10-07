@@ -23,6 +23,7 @@ regardless of the field, is of interest.
 About three to four times a year we send out a newsletter.
 To subscribe, go to 
 [Ricgraph Contact](https://docs.ricgraph.eu/README.html#contact).
+To unsubscribe, [please click here](mailto:r.d.t.janssen@uu.nl?subject=Please%20remove%20me%20from%20the%20Ricgraph%20newsletter%20email%20list&body=Hi%20Rik%2C%0D%0A%0D%0ACan%20you%20please%20remove%20me%20from%20your%20Ricgraph%20newsletter%20email%20list%3F%20Thanks!%0D%0A%0D%0ABest%20regards%2C%0D%0A%0D%0A%5Bplease%20replace%20with%20your%20name%5D%0D%0A%5Bplease%20replace%20with%20your%20email%20address%5D).
 We also have a 
 [newsletter archive](https://docs.ricgraph.eu/docs/ricgraph_pubs_pres_news_use_ment.html#ricgraph-newsletters).
 
