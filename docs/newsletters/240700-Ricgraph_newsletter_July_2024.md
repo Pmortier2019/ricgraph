@@ -42,3 +42,4 @@ Please let me know if you would like to be removed from this list (or if you wan
 someone forwarded it to you). There will be about 3 to 4 newsletters per year about Ricgraph.
 
 To subscribe to the newsletter email list, go to [Ricgraph Contact](../../README.md#contact).
+To unsubscribe, [please click here](mailto:r.d.t.janssen@uu.nl?subject=Please%20remove%20me%20from%20the%20Ricgraph%20newsletter%20email%20list&body=Hi%20Rik%2C%0D%0A%0D%0ACan%20you%20please%20remove%20me%20from%20your%20Ricgraph%20newsletter%20email%20list%3F%20Thanks!%0D%0A%0D%0ABest%20regards%2C%0D%0A%0D%0A%5Bplease%20replace%20with%20your%20name%5D%0D%0A%5Bplease%20replace%20with%20your%20email%20address%5D).

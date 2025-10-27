@@ -378,6 +378,7 @@ newsletter.
 [Please click here to subscribe to it. Your email program will open with
 a subscribe email text. Please complete it
 by filling in your name and email address](mailto:r.d.t.janssen@uu.nl?subject=Please%20add%20me%20to%20the%20Ricgraph%20newsletter%20email%20list&body=Hi%20Rik%2C%0D%0A%0D%0ACan%20you%20please%20add%20me%20to%20your%20Ricgraph%20newsletter%20email%20list%3F%20Thanks!%0D%0A%0D%0ABest%20regards%2C%0D%0A%0D%0A%5Bplease%20replace%20with%20your%20name%5D%0D%0A%5Bplease%20replace%20with%20your%20email%20address%5D).
+[To unsubscribe from the newsletter, please click here](mailto:r.d.t.janssen@uu.nl?subject=Please%20remove%20me%20from%20the%20Ricgraph%20newsletter%20email%20list&body=Hi%20Rik%2C%0D%0A%0D%0ACan%20you%20please%20remove%20me%20from%20your%20Ricgraph%20newsletter%20email%20list%3F%20Thanks!%0D%0A%0D%0ABest%20regards%2C%0D%0A%0D%0A%5Bplease%20replace%20with%20your%20name%5D%0D%0A%5Bplease%20replace%20with%20your%20email%20address%5D).
 We also have a 
 [newsletter archive](docs/ricgraph_pubs_pres_news_use_ment.md#ricgraph-newsletters). 
 
